@@ -1,0 +1,12 @@
+﻿@model IEnumerable<MVC_Practical_11_Partial_View.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<p class="my-4">
+    @Html.ActionLink("Create New", "Create", string.Empty, htmlAttributes: new { @class = "btn btn-primary" })
+</p>
+
+@Html.Partial("_List", Model)
